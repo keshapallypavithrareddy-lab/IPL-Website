@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact IPL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 class="center">Contact IPL Management</h2>
+
+<form class="contact-form">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Phone</label>
+        <input type="tel" pattern="[0-9]{10}" placeholder="10 digit number" required>
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Match Preferences</legend>
+
+        <label>Favorite Team</label>
+        <select>
+            <option>Select</option>
+            <option>MI</option>
+            <option>CSK</option>
+            <option>RCB</option>
+            <option>KKR</option>
+            <option>SRH</option>
+            <option>PBKS</option>
+            <option>GT</option>
+            <option>RR</option>
+            <option>LSG</option>
+            <option>DC</option>
+        </select>
+
+        <label>Interested In</label>
+        <input type="radio" name="type"> Tickets
+        <input type="radio" name="type"> Sponsorship
+        <input type="radio" name="type"> Media
+
+        <br><br>
+
+        <label>Select Services</label>
+        <input type="checkbox"> Match Updates
+        <input type="checkbox"> Newsletter
+        <input type="checkbox"> Fantasy League
+    </fieldset>
+
+    <fieldset>
+        <legend>Message</legend>
+        <textarea rows="5" placeholder="Write your message..."></textarea>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+<div class="center">
+    <a href="index.html" class="back-btn">Back to Home</a>
+</div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
